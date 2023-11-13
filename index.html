@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>WorkoutPhase Timer</title>
+</head>
+<body>
+    <h1 class="title">WorkoutPhase Timer</h1>
+
+    <div class="timer-section">
+        <label for="hours">Hour:</label>
+        <input type="number" id="hours" min="0" value="0">
+        
+        <label for="minutes">Min:</label>
+        <input type="number" id="minutes" min="0" max="59" value="0">
+        
+        <label for="seconds">Sec:</label>
+        <input type="number" id="seconds" min="0" max="59" value="60">
+    </div>
+
+    <button id="startPauseButton" onclick="startPauseTimer()" class="round-button">Start</button>
+    <button onclick="cancelTimer()" class="cancel-button">Cancel</button>
+
+    <script src="timer.js"></script>
+</body>
+</html>
